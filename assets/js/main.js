@@ -108,7 +108,9 @@
   /**
    * Initiate Pure Counter
    */
-  new PureCounter();
+ new PureCounter();
+
+
 
   /**
    * Animate the skills items on reveal
