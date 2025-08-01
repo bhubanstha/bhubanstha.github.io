@@ -1,0 +1,107 @@
+<!-- navbar navbar-expand-lg fixed-top navbar-dark bg-dark -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container container-fluid">
+    <a class="navbar-brand" href="#home">
+      <img
+        src="/assets/img/favicon.png"
+        alt="Logo"
+        width="24"
+        height="24"
+        class="d-inline-block"
+      />
+      My Web Page
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-label="navbar-toggler"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto my-2 my-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/course.html">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Me</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+        <!-- Dropdown with Theme Toggle -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+          >
+            <i id="activeTheme" class="fa-solid fa-moon"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="#">Light</a> -->
+              <button
+                type="button"
+                class="btn-theme-selector"
+                data-bs-theme-value="dark"
+                aria-pressed="true"
+              >
+                <i class="fa-solid fa-moon padding-right-15"></i>
+                Dark
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn-theme-selector"
+                data-bs-theme-value="light"
+                aria-pressed="true"
+              >
+                <i class="fa-solid fa-sun padding-right-15"></i>
+                Light
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn-theme-selector"
+                data-bs-theme-value="auto"
+                aria-pressed="true"
+              >
+                <i class="fa-solid fa-circle-half-stroke padding-right-15"></i>
+                Auto
+              </button>
+            </li>
+            <!-- <li class="dropdown-item">
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="themeToggle"
+                />
+                <label class="form-check-label" for="themeToggle"
+                  >Dark Mode</label
+                >
+              </div>
+            </li> -->
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

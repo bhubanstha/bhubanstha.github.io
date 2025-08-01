@@ -1,0 +1,100 @@
+<div class="card border-none">
+  <div class="card-body padding-side-none padding-top-none">
+    <form action="https://api.staticforms.xyz/submit" method="post" class="">
+      <!-- Required: Your Static Forms API key -->
+      <input type="hidden" name="apiKey" value="sf_2j44hl9indbm6ii2c0536jig" />
+      <input
+        type="hidden"
+        name="accessKey"
+        value="sf_2j44hl9indbm6ii2c0536jig"
+      />
+      <input
+        type="hidden"
+        name="recaptchaSecretKey"
+        value="6LdWokorAAAAANl3DIZh9MlIz4IhMi2hz2M4Zasz"
+      />
+
+      <!-- Enable reply-to functionality -->
+      <input type="hidden" name="replyTo" value="@" />
+
+      <!-- Anti-spam honeypot field -->
+      <input
+        type="text"
+        name="honeypot"
+        style="display: none"
+        tabindex="-1"
+        placeholder="Leave this field empty"
+        autocomplete="off"
+      />
+
+      <div class="row gy-4">
+        <div class="form-floating col-md-6">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Your Name"
+            autocomplete="off"
+            required="required"
+          />
+          <label for="name">Your Full Name</label>
+        </div>
+
+        <div class="form-floating col-md-6">
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            autocomplete="off"
+            required="required"
+          />
+          <label for="email">Your Eamil</label>
+        </div>
+
+        <div class="form-floating col-md-12">
+          <input
+            type="text"
+            class="form-control"
+            name="subject"
+            id="subject"
+            placeholder="Subject"
+            autocomplete="nope"
+            required="required"
+          />
+          <label for="subject">Email Subject</label>
+        </div>
+
+        <div class="form-floating col-md-12">
+          <textarea
+            class="form-control"
+            name="message"
+            id="message"
+            placeholder="Message"
+            required=""
+            autocomplete="off"
+            style="height: 200px; resize: none"
+          ></textarea>
+          <label for="message">Message</label>
+        </div>
+
+        <div class="col-9 text-center">
+          <!-- reCAPTCHA integration -->
+          <div
+            class="g-recaptcha col-md-12"
+            data-sitekey="6LdWokorAAAAAIEv0n82tSs1erZJQhB6ncuXUOSc"
+          ></div>
+        </div>
+
+        <div class="col-3 text-center">
+          <button class="btn btn-primary" type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

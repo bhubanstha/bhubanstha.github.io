@@ -1,0 +1,11 @@
+---
+title: Bhuban Shrestha's Blog
+layout: post
+---
+
+<section id="courses" class="section">
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    {% for course in site.data.courses %} {% include cards/course.html
+    course=course %} {% endfor %}
+  </div>
+</section>

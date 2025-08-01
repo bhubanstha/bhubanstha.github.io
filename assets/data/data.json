@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Who are you?",
+    "answer": [
+          ".typeString(\"<div class='row'> <div class='col-12 col-sm-9'><span>I am Bhuban Shrestha, a dedicated and experienced software engineer with a strong background in developing and maintaining business applications across a variety of platforms. I have over 9 years of professional experience in .NET technologies, working in different roles from .NET Developer to Senior Software Engineer in companies across Nepal. I recently completed my Master’s in Information Technology from Southern Cross University in Australia, which enhanced my technical and analytical skills further. I'm passionate about writing clean, maintainable code, improving application performance, and continuously learning new technologies. Currently, I’m based in Gold Coast, QLD, and actively seeking opportunities where I can contribute to meaningful software projects and grow professionally.</span></div><div class='col-12 col-sm-3'><img src='https://yt3.googleusercontent.com/ytc/AIdro_nQPM20A6BXEDu4SjkZqEtjmSeBny_9aoMWD1qjB1_U3Q=s900-c-k-c0x00ffffff-no-rj' class='img img-thumbnail'></div></div>\")"
+
+        ]
+  },
+  {
+    "question": "What programming languages are you most comfortable with?",
+    "answer": [
+      ".typeString(\"As a .NET Software Developer, I'm most comfortable with C# for server-side development. I also have experience with SQL, JavaScript, and Python. I'm open to learning and using newer languages like Go or Rust, as I believe most programming languages share core concepts such as data structures, control flow, and object-oriented principles. The main differences lie in syntax and language-specific paradigms, which can be learned with practice and documentation.\")"
+    ]
+  },
+  {
+    "question": "Can you walk me through a recent project you worked on?",
+    "answer": [
+      ".typeString(\"I am working on multiple projects and it would be hard to explain on detail on each project. However, I am working on legacy system developed in VB6 in modular approach which I find very interesting. At the same time I am working on web app built on AngularJS and TypeScript.\")"
+    ]
+  },
+  {
+    "question": "How do you approach debugging and troubleshooting?",
+    "answer": [
+      ".typeString(\"The first step of troubleshooting is to validate trouble does exists. Once that is verified I will go from top to bootom (request to response) of the troubling section. Once I understand the flow, I might actually find the bug and fix it. However, because of various reasons if obvious bug couldn't be determined, modern IDE comes with many features such as adding breakpoints, bookmarks, watch window that can be used to determine the actual flow and data present in a variable at specific point of time which can help resolving issue.\")"
+    ]
+  },
+  {
+    "question": "How do you manage version control in your projects?",
+    "answer": [
+       ".typeString(\"I manage version control using Git, which I find well-suited for modern software development. I structure my projects with a main or master branch that contains stable, deployment-ready code, and use feature branches for ongoing development. This allows for clean separation of concerns and easier collaboration.\")",
+      ".typeString(\"I've also worked with centralized version control systems (CVCS) in past projects. While CVCS offers a simpler workflow and solves many coordination issues, I find it less flexible and somewhat outdated compared to distributed systems like Git. Git’s branching, merging, and offline capabilities make it a better fit for agile and collaborative environments.\")"
+    ]
+  },
+  {
+    "question": "What’s your approach to writing clean, maintainable code?",
+    "answer": [
+      ".typeString(\"I believe writing clean code is myth because there is no exact definition of clean clode. However, I try to follow guidelines provided by Rober C. Martin in his book Clean Code: A Handbook of Agile Software Craftsmanship to make code readable. Similarly, I will write a comments in a code where I think that is required. I believe having a technical documentation is also equally important for maintainable code.\")"
+    ]
+  },
+  {
+    "question": "How many years of experience do you have in software development?",
+    "answer": [
+      ".typeString(\"I began my career as a software developer in 2013. Throughout this time, I've worked across various domains and technologies, continuously evolving my skills to align with modern development practices and industry standards.\")"
+    ]
+  },
+  {
+    "question": "Can you tell me what projects you have worked on?",
+    "answer": [
+      ".typeString(\"Over the course of my career since 2013, I've worked on a variety of projects ranging from enterprise-level web applications to internal tools and APIs. My experience includes:\")",
+      ".typeString(\"<li><strong>Windows Desktop App</strong> for supermarket inventory management </li>\")",
+      ".typeString(\"<li><strong>Webform App</strong> for complete student management for school and university</li>\")",
+       ".typeString(\"<li><strong>SSIS data pipeline</strong> for US healthcare data processing</li>\")",
+       ".typeString(\"<li><strong>And many more</strong></li>\")",
+      ".typeString(\"Each project has helped me grow technically and professionally, especially in areas like clean architecture, agile development, and cross-functional collaboration.\")"
+    ]
+  }
+]

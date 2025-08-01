@@ -1,0 +1,227 @@
+---
+---
+
+$command-line-text-opacity: 1
+$command-line-text-color: rgb(34, 197, 94 )
+#home
+  position: relative
+  height: 80vh // Ensure it takes full viewport height
+  display: flex
+  justify-content: center
+  align-items: center
+
+#canv
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 1
+  z-index: -1 // Place it behind the content
+
+#home-content
+  position: relative
+  z-index: 1 // Ensure content is above the canvas
+  padding-top: 0 // Remove default padding if any
+  padding-bottom: 0 // Adjust padding for vertical alignment
+  color: white // If you need white text for visibility
+  text-align: center // Center the content
+  display: flex
+  justify-content: center
+  flex-direction: column
+  height: 100% // Ensure the content is vertically centered
+  align-items: center
+
+.terminal-buttons
+  text-align: left
+
+.command-line
+  display: flex
+  align-items: center
+
+.prompt
+  color: $command-line-text-color
+  padding-right: 10px
+
+.skills-btn
+  margin: 5px
+  background: rgba(34,197,94,.1)
+  border-color: rgba(34,197,94,.2)
+  border-width: 1px
+  border-radius: 5px
+  padding: 5px 10px
+  font-size: 14px
+
+  &:hover
+    background-color: #66BB6A
+
+
+.form-floating>label
+    padding: 1rem 0rem
+    left: 1rem
+    width: 90vw
+    display: inline-block
+
+.mb-8
+  margin-bottom: 1em
+.social-links
+  min-width: 200px
+
+.border-none
+  border-width: 0
+
+.padding-side-none
+  padding-left: 0
+  padding-right: 0
+
+.padding-top-none
+  padding-top: 0
+
+.padding-right-15
+  padding-right: 15px
+
+.btn-theme-selector
+  background: transparent
+  border: 0
+  padding: 10px 0
+  display: inline-block
+  width: 100%
+
+  &:hover
+      background-color: var(--bs-secondary-bg)
+
+.section
+  padding: 30px 0
+
+  &:first-child
+    padding: 60px 0
+
+// Scrollbar styles for WebKit (Chromium-based browsers)
+::-webkit-scrollbar 
+  width: 6px
+
+
+::-webkit-scrollbar-thumb 
+  background: linear-gradient(to bottom, green)
+  border-radius: 6px
+
+  &:hover 
+    background: linear-gradient(to bottom, #eaea5aff, #00cc00, #eaea5aff)
+
+p
+  text-align: justify
+
+/*--------------------------------------------------------------
+ *# Services Section
+ *--------------------------------------------------------------
+
+.services .service-item
+  background-color: var(--bs-body-bg)
+  box-shadow: 0px 0px 5px 2px rgba(var(--bs-body-color-rgb), 0.1)
+  height: 100%
+  padding: 60px 30px
+  text-align: center
+  transition: 0.3s
+  border-radius: 5px
+
+  .icon
+    margin: 0 auto
+    width: 100px
+    height: 100px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: ease-in-out 0.3s
+    position: relative
+
+    i
+      font-size: 36px
+      transition: 0.5s
+      position: relative
+
+    svg
+      position: absolute
+      top: 0
+      left: 0
+
+      path
+        transition: 0.5s
+        fill: rgba(var(--bs-tertiary-bg-rgb), 1)
+        
+
+  h3
+    font-weight: 700
+    margin: 10px 0 15px 0
+    font-size: 22px
+
+  p
+    line-height: 24px
+    font-size: 14px
+    margin-bottom: 0
+
+  &:hover
+    box-shadow: 0px 0px 25px 5px rgba(var(--bs-body-color-rgb), 0.1)
+
+  &.item-cyan
+    i
+      color: #0dcaf0
+
+    &:hover .icon
+      i
+        color: #fff
+
+      path
+        fill: #0dcaf0
+
+  &.item-orange
+    i
+      color: #fd7e14
+
+    &:hover .icon
+      i
+        color: #fff
+
+      path
+        fill: #fd7e14
+
+  &.item-teal
+    i
+      color: #20c997
+
+    &:hover .icon
+      i
+        color: #fff
+
+      path
+        fill: #20c997
+
+  &.item-red
+    i
+      color: #df1529
+
+    &:hover .icon
+      i
+        color: #fff
+
+      path
+        fill: #df1529
+
+  &.item-indigo
+    i
+      color: #6610f2
+
+    &:hover .icon
+      i
+        color: #fff
+
+      path
+        fill: #6610f2
+
+  &.item-pink
+    i
+      color: #f3268c
+
+    &:hover .icon
+      i
+        color: #fff
+
+      path
+        fill: #f3268c

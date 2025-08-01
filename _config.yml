@@ -1,0 +1,62 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Bhuban Shrestha
+email: bhubanshrestha12@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+ Welcome to my portfolio! I'm Bhuban Shrestha, a .NET Software Developer with over 12 years of experience in building scalable, efficient, and user-friendly applications. My expertise spans C#, SQL, JavaScript, and Python, with a strong focus on clean architecture, modern development practices, and continuous learning. Here you'll find a showcase of the projects I've worked on—from enterprise web applications and RESTful APIs to internal tools and automation scripts. I believe in writing maintainable code, collaborating effectively, and staying curious about emerging technologies like Go and Rust. Feel free to explore my work, learn more about my development journey, and connect with me for collaboration or opportunities.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://bhubanshrestha.com.np/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: bhubanshresth12
+github_username:  bhubanstha
+
+#setup ruby
+name: Set up Ruby
+uses: ruby/setup-ruby@v1
+with:
+    ruby-version: '3.4.4' # Match the Ruby version you're using locally
+
+# Build settings
+# theme: minima
+plugins:
+  - jekyll-feed
+
+sass:
+  style: compressed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

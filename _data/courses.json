@@ -1,0 +1,62 @@
+[
+    {
+        "Title": "C# Fundamentals",
+        "Description": "Learn the basics of C# programming language, including syntax, data types, and control structures.",
+        "Image": "/assets/img/courses/csharp.jpeg",
+        "Link": "/course/csharp/intro.html"
+    },
+    {
+        "Title": "JavaScript Basics",
+        "Description": "An introduction to JavaScript, covering variables, functions, and basic DOM manipulation.",
+        "Image": "/assets/img/courses/csharp.jpeg",
+        "Link": "/courses/javascript-basics"
+    },
+    {
+        "Title": "Python for Beginners",
+        "Description": "A beginner's guide to Python programming, focusing on syntax, data structures, and basic algorithms.",
+        "Image": "/assets/img/courses/csharp.jpeg",
+        "Link": "/courses/python-for-beginners"
+    },
+    {
+        "Title": "Web Development with HTML & CSS",
+        "Description": "Learn how to build responsive websites using HTML and CSS, including layout techniques and styling.",
+        "Image": "/assets/img/courses/csharp.jpeg",
+        "Link": "/courses/web-development-html-css"
+    },
+    {
+        "Title": "Introduction to React",
+        "Description": "Get started with React, a popular JavaScript library for building user interfaces, covering components and state management.",
+        "Image": "/assets/img/courses/csharp.jpeg",
+        "Link": "/courses/react-introduction"
+    },
+    {
+        "Title": "Data Science with Python",
+        "Description": "Explore data analysis and visualization techniques using Python libraries like Pandas and Matplotlib.",
+        "Image": "/assets/img/courses/csharp.jpeg",
+        "Link": "/courses/data-science-python"
+    },
+    {
+        "Title": "Machine Learning Basics",
+        "Description": "An introductory course on machine learning concepts, algorithms, and practical applications using Python.",
+        "Image": "/assets/img/courses/csharp.jpeg",
+        "Link": "/courses/machine-learning-basics"
+    },
+    {
+        "Title": "DevOps Essentials",
+        "Description": "Learn the fundamentals of DevOps practices, including continuous integration, deployment, and monitoring.",
+        "Image": "/assets/img/courses/csharp.jpeg",
+        "Link": "/courses/devops-essentials"
+    },
+    {
+        "Title": "Cloud Computing with AWS",
+        "Description": "An overview of cloud computing concepts and services, focusing on Amazon Web Services (AWS) fundamentals.",
+        "Image": "/assets/img/courses/csharp.jpeg",
+        "Link": "/courses/cloud-computing-aws"
+    },
+    {
+        "Title": "Cybersecurity Fundamentals",
+        "Description": "Learn the basics of cybersecurity, including threat analysis, risk management, and security best practices.",
+        "Image": "/assets/img/courses/csharp.jpeg",
+        "Link": "/courses/cybersecurity-fundamentals"
+    }
+]
