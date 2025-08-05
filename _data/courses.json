@@ -3,7 +3,7 @@
         "Title": "C# Fundamentals",
         "Description": "Learn the basics of C# programming language, including syntax, data types, and control structures.",
         "Image": "/assets/img/courses/csharp.jpeg",
-        "Link": "/course/csharp/intro.html"
+        "Link": "/course/csharp/"
     },
     {
         "Title": "JavaScript Basics",

@@ -67,7 +67,12 @@
   <body>
     <div class="container">
       {% include header.html %}
-      <main>{{ content }} {% include footer.html %}</main>
+      <main>
+        <section class="section">
+          <img src="{{page.courseImage}}" alt="C# Logo" class="courseimg" />
+        </section>
+        {{ content }} {% include footer.html %}
+      </main>
     </div>
 
     <script
@@ -89,15 +94,15 @@
       integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script> -->
+    ></script> 
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js"
       integrity="sha512-fo6X5UXaTRf/mHuTYJBR3Q/rpPa+LB2KUyDMROluMkZnfEEF4DhQyI5AHRoAe/zzu1Ty58MMmZXG4SuVEpXsng=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
+    ></script>-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="/assets/js/site.js" async defer></script>
+    <script src="/assets/js/main.js" async defer></script>
   </body>
 </html>

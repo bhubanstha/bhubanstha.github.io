@@ -1,0 +1,36 @@
+# NOTICE: The collection of content and other data on this site
+# through automated means, including any device, tool, or process
+# designed to data mine or scrape content, is prohibited except
+# (1) as provided by the below Content Usage directives or (2)
+# with express written permission from Bhuban.
+
+# The Content Usage directives in this file use syntax and
+# vocabulary from a proposed IETF standard drafted by the AI
+# Preferences (aipref) working group and have the meanings set
+# forth in that standard. To learn more, please see
+# https://contentsignals.org/.
+
+# To request permission to license our intellectual property
+# and/or other materials, please contact us at
+# bhubanshrestha12@gmail.com.
+
+
+
+# Allow specific search engines to index for search,
+# but not for AI training.
+
+User-Agent: *
+Disallow: /
+
+User-Agent: googlebot
+Content-Usage: tdm=n, search=y
+Allow: /
+
+User-Agent: bingbot
+Content-Usage: tdm=n, search=y
+Allow: /
+
+User-Agent: OAI-Searchbot
+Content-Usage: tdm=n, search=y
+Allow: /
+/
