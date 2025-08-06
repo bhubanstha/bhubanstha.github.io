@@ -18,23 +18,25 @@ $(document).ready(function () {
   });
 
   const canvas = document.getElementById("canv");
-  const canasContainer = document.getElementById("home");
-  canvasCtx = canvas.getContext("2d");
+  if (canvas != null) {
+    const canasContainer = document.getElementById("home");
+    canvasCtx = canvas.getContext("2d");
 
-  width = canvas.width = canasContainer.offsetWidth; //document.body.offsetWidth;
-  height = canvas.height = canasContainer.offsetHeight; // document.body.offsetHeight;
-  const cols = Math.floor(width / 20) + 1;
-  ypos = Array(cols).fill(0);
+    width = canvas.width = canasContainer.offsetWidth; //document.body.offsetWidth;
+    height = canvas.height = canasContainer.offsetHeight; // document.body.offsetHeight;
+    const cols = Math.floor(width / 20) + 1;
+    ypos = Array(cols).fill(0);
 
-  const styles = getComputedStyle(document.documentElement);
-  const matrixColor = styles.getPropertyValue("--bs-tertiary-bg-rgb").trim();
-  canvasCtx.fillStyle = `rgba(${matrixColor}, 0.15)`; //"#000";
-  //ctx.fillRect(0, 0, w, h);
-  canvasCtx.clearRect(0, 0, width, height);
-  canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
-  setInterval(matrix, 50);
+    const styles = getComputedStyle(document.documentElement);
+    const matrixColor = styles.getPropertyValue("--bs-tertiary-bg-rgb").trim();
+    canvasCtx.fillStyle = `rgba(${matrixColor}, 0.15)`; //"#000";
+    //ctx.fillRect(0, 0, w, h);
+    canvasCtx.clearRect(0, 0, width, height);
+    canvasCtx.fillRect(0, 0, canvas.width, canvas.height);
+    setInterval(matrix, 50);
 
-  window.addEventListener("resize", reportWindowSize);
+    window.addEventListener("resize", reportWindowSize);
+  }
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", setAutoTheme);

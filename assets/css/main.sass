@@ -3,6 +3,14 @@
 
 $command-line-text-opacity: 1
 $command-line-text-color: rgb(34, 197, 94 )
+$bs-btn-bg: #ffc107;
+//reseting font size fo my web page
+html 
+  font-size: 125% /* 112.5% of 16px = 20px */
+
+h1, h2, h3, h4, h5, h6
+  font-weight: bold
+
 #home
   position: relative
   height: 80vh // Ensure it takes full viewport height
@@ -92,11 +100,77 @@ $command-line-text-color: rgb(34, 197, 94 )
   padding: 30px 0
 
   &:first-child
-    padding: 60px 0 0 0
-    
+    padding: 70px 0 0 0
+
 .courseimg
   width: 100%
   height: 30vh
+
+
+.course
+  position: relative
+
+.course-heading 
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  background: rgba(var(--bs-tertiary-bg-rgb), 0.5)
+  padding: 10px
+  margin: 0
+  text-align: center
+
+.card-img-top
+  max-height: 10rem
+
+.course-card-footer
+  padding: 0 0.7rem
+  border-top: 0
+
+.collapsible-list
+  ul
+    display: none
+
+  li
+    &.has-children
+      cursor: pointer
+      user-select: none
+      margin: 5px 0
+      border-bottom: 2px solid rgba(var(--bs-body-color-rgb), 0.2)
+      margin-bottom: 1rem
+      position: relative
+      
+      &.no-border
+        border-bottom: 0
+      &.open > ul
+        display: block
+
+      &::after
+        content: '▶'
+        content: "\f078";  /* this is your text. You can also use UTF-8 character codes as I do here */
+        font-family: FontAwesome;
+
+        /* Right-pointing arrow
+        display: inline-block
+        margin-right: 8px
+        transition: transform 0.5s
+        position: absolute
+        right: 0
+        top: 0
+
+      &.open::after
+        transform: rotate(900deg)
+
+        /* Rotates arrow to point down
+
+    list-style-type: none
+    padding-bottom: 0.2rem
+ul.collapsible-list
+  padding-left: 0
+  margin: 0
+
+  ul
+    padding-left: 20px
 
 // Scrollbar styles for WebKit (Chromium-based browsers)
 ::-webkit-scrollbar 
@@ -112,7 +186,7 @@ $command-line-text-color: rgb(34, 197, 94 )
 
 p
   text-align: justify
-
+ 
 /*--------------------------------------------------------------
  *# Services Section
  *--------------------------------------------------------------
@@ -229,3 +303,40 @@ p
 
       path
         fill: #f3268c
+
+a
+  text-decoration: none
+  color: var(--bs-body-color)
+  
+  &:hover
+    color: rgba(var(--bs-link-color-rgb))
+
+.btn-scroll-up
+  display: none
+  position: fixed
+  bottom: 1rem
+  right: 1.5rem
+  z-index:99
+  border: none;
+  height: 2rem
+  width: 2rem
+  border-radius: 1rem
+  border: none
+  padding: 0
+
+.course_title
+  display: inline-block
+  position: relative
+
+
+  &::after
+    content: ""
+    position: absolute
+    bottom: 0.1rem
+    width: 25vw
+    max-width: 15vw
+    height: 2px
+    background-color: $bs-btn-bg
+
+@view-transition
+  navigation: auto

@@ -62,6 +62,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      id="hljs-theme"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
@@ -69,10 +76,41 @@
       {% include header.html %}
       <main>
         <section class="section">
-          <img src="{{page.courseImage}}" alt="C# Logo" class="courseimg" />
+          <div class="row">
+            <!-- <img src="{{page.courseImage}}" alt="C# Logo" class="courseimg" /> -->
+            <h1 class="course_title" style="view-transition-name: course_title">
+              {{page.heading}}
+            </h1>
+          </div>
         </section>
-        {{ content }} {% include footer.html %}
+        {{ content }}
+
+        <section class="section" id="github_comment">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="bhubanstha/bhubanstha.github.io"
+            data-repo-id="R_kgDONVZqjQ"
+            data-category="[ENTER CATEGORY NAME HERE]"
+            data-category-id="[ENTER CATEGORY ID HERE]"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async
+          ></script>
+        </section>
       </main>
+      <button
+        class="btn btn-warning btn-scroll-up"
+        onclick="topFunction()"
+        id="myBtn"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
     </div>
 
     <script
@@ -102,7 +140,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"
+      integrity="sha512-EBLzUL8XLl+va/zAsmXwS7Z2B1F9HUHkZwyS/VKwh3S7T/U0nF4BaU29EP/ZSf6zgiIxYAnKLu6bJ8dqpmX5uw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/csharp.min.js"
+      integrity="sha512-E508cDPDWSFwXbo0jUpAxAuDtuKyg3qzALy/oyrTBcP07/Xz79ajxXl4LzoNAZw+hr4NAnjPhAdwN0qtmJ9ukg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <script src="/assets/js/post.js" async defer></script>
     <script src="/assets/js/main.js" async defer></script>
+
+    <script>
+      $(document).ready(function () {
+        hljs.highlightAll();
+      });
+    </script>
   </body>
 </html>

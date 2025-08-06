@@ -36,6 +36,13 @@
     <div class="container">
       {% include header.html %}
       <main>{{ content }} {% include footer.html %}</main>
+      <button
+        class="btn btn-warning btn-scroll-up"
+        onclick="topFunction()"
+        id="myBtn"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
     </div>
 
     <script

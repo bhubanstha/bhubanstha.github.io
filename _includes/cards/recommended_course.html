@@ -1,0 +1,12 @@
+{% assign first_course = site.data.courses | where: 'Id',
+{{include.course_first}} %} {% assign second_course = site.data.courses | where:
+'Id', {{include.course_second}} %}
+
+<section id="rec_courses" class="section">
+  <div class="row row-cols-1 row-cols-md-2 g-4 card-deck">
+    {% for course in first_course %} {% include cards/course.html course=course
+    %} {% endfor %} {% if {{include.course_second}} > -1 %} {% for course in
+    second_course %} {% include cards/course.html course=course %} {% endfor %}
+    {% endif %}
+  </div>
+</section>
