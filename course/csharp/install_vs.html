@@ -1,0 +1,85 @@
+---
+title: C# Fundamentals
+layout: post
+permalink: /course/csharp/intall-visual-studio
+courseImage: /assets/img/courses/csharp.jpeg
+heading: "C# Fundamentals"
+active_section: setting_env
+---
+
+<section id="csharp-intro" class="section">
+  <div class="row">
+    <div class="col col-lg-3">
+      {% include_relative _curriculum.html active_section=page.active_section %}
+    </div>
+    <div class="col col-lg-9">
+      <h2 style="view-transition-name: course_heading">
+        Installing Visual Studio
+      </h2>
+      <div style="view-transition-name: main_content">
+        <p>
+          Visual Studio is an integrated development environment (IDE) from Microsoft that provides a suite of tools for software development. It's designed to help developers build, test, and deploy applications. Visual studio is windows only IDE although microsoft had released Visual Studio for Mac which is discontinued to support Visual Studio Code as a cross platform IDE. There are several version and edition of visual studio to install.
+          However, before installing any specific version/edition you need to
+          make sure the one you are going to install is supported in your
+          machine.
+        </p>
+        <ol>
+          <li><h5>Step 1 - Make sure your computer is ready for Visual Studio</h5>
+            <p>Before you begin installing Visual Studio:
+              <ul class="feature">
+                <li class="feature-item">Check the <a href="https://learn.microsoft.com/en-us/visualstudio/releases/2022/system-requirements" target="_blank" class="external_url">system requirements</a>. These requirements help you know whether your computer supports Visual Studio</li>
+                <li class="feature-item">Make sure that the user who performs the initial installation has administrator permissions on the machine. For more information,<a href="https://learn.microsoft.com/en-us/visualstudio/ide/user-permissions-and-visual-studio?view=vs-2022" class="external_url" target="_blank"> see User permissions and Visual Studio.</a></li>
+                <li class="feature-item">Apply the latest Windows updates. These updates ensure that your computer has both the latest security updates and the required system components for Visual Studio.</li>
+                <li class="feature-item">Restart. Restarting ensures that any pending installs or updates don't hinder your Visual Studio install.</li>
+                <li class="feature-item">Free up space. Remove unneeded files and applications from your system drive by, for example, running the Disk Cleanup app.</li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <h5>Step 2 - Determine which version and edition of Visual Studio to install</h5>
+            <p>Decide which version and edition of Visual Studio to install. The most common options are:
+              <ul class="feature">
+                <li class="feature-item">The latest release of Visual Studio 2022 that is hosted on Microsoft servers. To install this version, select the following button and then choose the edition you want. The installer downloads a small bootstrapper to your Downloads folder.
+                  <p><a href="https://visualstudio.microsoft.com/downloads/?cid=learn-onpage-download-install-visual-studio-page-cta" target="_blank" class="btn btn-outline-warning">Download Visual Studio 2022</a></p>
+                  
+                </li>
+                <li class="feature-item">If you already have Visual Studio installed, you can <a href="https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio-versions-side-by-side?view=vs-2022#install-different-editions-within-the-same-major-visual-studio-version-side-by-side" target="_blank" class="external_url">install another version alongside it</a>  by choosing one that is offered in the Visual Studio Installer's Available tab.</li>
+                <li class="feature-item">You can download a bootstrapper for a specific version from the <a href="https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-history#release-dates-and-build-numbers" target="_blank" class="external_url"> Visual Studio 2022 Release History page</a> and use it to install Visual Studio.</li>
+                <li class="feature-item">For a computer connected to enterprise AD your IT administrator might point you to a specific location from which to install Visual Studio.</li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <h5>Step 3 - Initiate the installation</h5>
+            <p>
+              If you downloaded a bootstrapper file, you can use it to install Visual Studio. You need administrator permissions. The bootstrapper installs the latest version of the Visual Studio Installer. The installer is a separate program that provides everything you need to both install and customize Visual Studio.
+              <ul class="feature">
+                <li class="feature-item">From your Downloads folder, double-click the bootstrapper named VisualStudioSetup.exe or named something like vs_community.exe to start the installation.</li>
+                <li class="feature-item">If you receive a User Account Control notice, choose Yes. The dialog box asks you to acknowledge the Microsoft License Terms and the Microsoft Privacy Statement. Choose Continue.
+                  <p>
+                    <img src="https://learn.microsoft.com/en-us/visualstudio/install/media/vs-2022/privacy-and-license-terms.png?view=vs-2017&viewFallbackFrom=vs-2022" class="img-fluid"/>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <h5>Step 4 - Choose workloads</h5>
+            <p>After you install the Visual Studio Installer, you can use it to customize your installation by selecting the feature sets, or workloads, that you want. Here's how.
+              <ul class="feature">
+                <li class="feature-item">Select the workload that you want in the Visual Studio Installer. For now you can select ASP.NET and web development, .NET desktop development
+                  <p>
+                    <img src="https://learn.microsoft.com/en-us/visualstudio/install/media/vs-2022/vs-installer-workloads.png?view=vs-2017&viewFallbackFrom=vs-2022" class="img-fluid"/>
+                  </p>
+                </li>
+                <li class="feature-item">After you choose the workloads that you want, select Install.</li>
+              </ul>
+            </p>
+          </li>
+        </ol>
+        <p>After this installation should start. To futher cusomize the installation with optional components, language pack or installation location visit <a href="https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022" target="_blank" class="external_url">microsoft visual studio 2022 installation guide</a>.</p>
+      </div>
+      <div>{% include _nav_btn.html prev='history' next='intall-visual-studio-code' %}</div>
+    </div>
+  </div>
+</section>

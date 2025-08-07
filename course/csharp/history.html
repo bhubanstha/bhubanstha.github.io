@@ -27,17 +27,17 @@ active_section: csharp_basics
         <ol>
           {% for version in site.data.c_sharp_history %}
           <li>
-            {{version.Version}}
+            <h6>{{version.Version}}</h6>
             <p>{{version.Description}}</p>
             <p>Key Features:</p>
-            <ol>
+            <ul class="feature">
               {% for feature in version.Features %}
-              <li>
+              <li class="feature-item">
                 {{feature.Title}}
                 <p>{{feature.Description}}</p>
               </li>
               {% endfor %}
-            </ol>
+            </ul>
           </li>
           {% endfor %}
         </ol>
@@ -56,7 +56,9 @@ active_section: csharp_basics
           >
         </p>
       </div>
-      <div>{% include _nav_btn.html prev='intro' next='history' %}</div>
+      <div>
+        {% include _nav_btn.html prev='intro' next='intall-visual-studio' %}
+      </div>
     </div>
   </div>
 </section>

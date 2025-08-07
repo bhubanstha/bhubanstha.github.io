@@ -40,6 +40,15 @@ $(document).ready(function () {
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", setAutoTheme);
+
+  const currentUrl = window.location.href.replace(/\/+$/, ""); // strip trailing slash
+  console.log("Current url: " + currentUrl);
+  $("ul.collapsible-list a")
+    .filter(function () {
+      console.log("List url: " + this.href);
+      return this.href.replace(/\/+$/, "") === currentUrl;
+    })
+    .addClass("active");
 });
 
 function setAutoTheme(document) {
@@ -97,7 +106,10 @@ function topFunction() {
 }
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";

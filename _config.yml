@@ -27,11 +27,6 @@ url: "https://bhubanshrestha.com.np/" # the base hostname & protocol for your si
 twitter_username: bhubanshresth12
 github_username:  bhubanstha
 
-#setup ruby
-name: Set up Ruby
-uses: ruby/setup-ruby@v1
-with:
-    ruby-version: '3.4.4' # Match the Ruby version you're using locally
 
 # Build settings
 # theme: minima

@@ -10,11 +10,21 @@
       <li><a href="/course/csharp/history">History and Evolution of C#</a></li>
     </ul>
   </li>
-  <li class="has-children">
+  <li
+    class="has-children {% if include.active_section == 'setting_env' %}open{% endif %}"
+  >
     Setting Up Your Development Environment
     <ul>
-      <li>Installing Visual Studio</li>
-      <li>Installing Visual Studio Code</li>
+      <li>
+        <a href="/course/csharp/intall-visual-studio"
+          >Installing Visual Studio</a
+        >
+      </li>
+      <li>
+        <a href="/course/csharp/intall-visual-studio-code"
+          >Installing Visual Studio Code</a
+        >
+      </li>
       <li>Creating Your First C# Project</li>
       <li>Understanding the C# Project Structure</li>
     </ul>

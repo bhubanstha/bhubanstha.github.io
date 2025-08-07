@@ -1,0 +1,117 @@
+---
+title: C# Fundamentals
+layout: post
+permalink: /course/csharp/intall-visual-studio-code
+courseImage: /assets/img/courses/csharp.jpeg
+heading: "C# Fundamentals"
+active_section: setting_env
+---
+
+<section id="csharp-intro" class="section">
+  <div class="row">
+    <div class="col col-lg-3">
+      {% include_relative _curriculum.html active_section=page.active_section %}
+    </div>
+    <div class="col col-lg-9">
+      <h2 style="view-transition-name: course_heading">
+        Installing Visual Studio Code
+      </h2>
+      <div style="view-transition-name: main_content">
+        <p>
+          Visual Studio Code (VS Code) is a free, open-source, and lightweight
+          source code editor developed by Microsoft. It is available on Windows,
+          macOS, and Linux and is designed to be fast, flexible, and highly
+          customizable for developers. Unlike Visual Studio which is a dedicated
+          IDE for .NET technology stack, VS Code is more like an extensible text
+          editor. By installing extensions available in visual studio
+          marketplace, VS Code features can be extended and used as a modern
+          cross platform IDE.
+        </p>
+
+        <ul class="feature">
+          <li class="feature-item">
+            Since, VS Code itself isn't an IDE like Visual Studio you will need
+            to download latest version of .NET SDK and install it.
+
+            <p>
+              <a
+                href="https://dotnet.microsoft.com/en-us/download"
+                target="_blank"
+                class="btn btn-outline-warning"
+                >Download Latest .NET SDK</a
+              >
+            </p>
+
+            <div class="alert alert-warning" role="alert">
+              At this time don't install both x64 and x86 variant of same verion
+              of .NET SDK. This will conflict the dotnet version and will have
+              to manually
+              <a
+                href="https://learn.microsoft.com/en-us/dotnet/core/install/windows#no-net-sdk-was-found"
+                target="_blank"
+                class="external_url"
+                >resolve the issue</a
+              >.
+            </div>
+          </li>
+          <li class="feature-item">
+            Download VS Code
+            <a
+              href="https://code.visualstudio.com/docs/setup/setup-overview"
+              target="_blank"
+              class="external_url"
+              >for your operating system</a
+            >
+            and install it.
+            <p>
+              <a
+                href="https://dotnet.microsoft.com/en-us/download"
+                target="_blank"
+                class="btn btn-outline-warning"
+                >Download Latest VS Code for windows</a
+              >
+            </p>
+          </li>
+          <li class="feature-item">
+            Restart your computer to finish installation if required.
+          </li>
+          <li class="feature-item">
+            Open terminal and verify dotnet is installed and is available to use
+            <pre><code class="language-bash">
+$ dotnet --version
+        </code> </pre>
+            <p>
+              You should see .net version if it is properly installed &
+              available. If you don't see anything follow this instruction and
+              <a
+                href="https://learn.microsoft.com/en-us/dotnet/core/install/windows#no-net-sdk-was-found"
+                target="_blank"
+                class="external_url"
+                >add donet installation path in environment variable</a
+              >. Recheck in terminal now if dotnet is resolved or not.
+            </p>
+          </li>
+          <li class="feature-item">
+            Open VS Code and complete necessary welcome setups
+          </li>
+          <li class="feature-item">
+            On left side of VS Code click Extensions and search for C#
+          </li>
+          <li class="feature-item">
+            Install C# and C# Dev Kit extensions
+            <p>
+              <img
+                src="/assets/img/vs_code_c_sharp_ext.png"
+                class="img-fluid"
+                alt="C# extensions for VS Code"
+              />
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        {% include _nav_btn.html prev='intall-visual-studio' next='404' %}
+      </div>
+    </div>
+  </div>
+</section>

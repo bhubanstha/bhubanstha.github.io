@@ -7,7 +7,7 @@ $bs-btn-bg: #ffc107
 
 //reseting font size fo my web page
 html 
-  font-size: 125% /* 125% of 16px = 20px */
+  font-size: 125% /* 125% of 16px = 20px => 1rem */
 
 h1, h2, h3, h4, h5, h6
   font-weight: bold
@@ -318,7 +318,31 @@ a.external_url
 
   &:hover
     color: var(--bs-link-hover-color)
-    
+
+a.active
+  color: var(--bs-blue)
+
+  &:hover
+    color: var(--bs-purple)
+
+ul.feature
+  --icon-space:1.3em
+  list-style: none
+  padding: 0
+
+li.feature-item
+  padding-left: var(--icon-space)
+  text-align: justify
+
+  &:before
+    content: "\f148"
+    font-family: FontAwesome
+    display: inline-block
+    margin-left: calc( var(--icon-space) * -1 )
+    transform: rotate(90deg)
+    margin-right: 0.5rem
+
+
 .btn-scroll-view-up
   display: none
   position: fixed
