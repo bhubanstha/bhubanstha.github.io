@@ -16,88 +16,47 @@ active_section: csharp_basics
       <h2 style="view-transition-name: course_heading">
         History and Evolution of C#
       </h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit veniam
-        laudantium totam expedita, nemo mollitia doloribus neque. Magni
-        perferendis, adipisci debitis, dolor iste officia, eaque nisi vitae
-        consectetur autem eius. Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Culpa nesciunt, aliquid sint obcaecati fuga explicabo
-        aspernatur. Dignissimos, qui doloribus odit quam accusamus voluptate
-        natus ut illo cupiditate? Cupiditate, est ipsam. Lorem ipsum dolor, sit
-        amet consectetur adipisicing elit. Facilis rem expedita qui consequatur,
-        dolor suscipit omnis amet accusantium cupiditate fuga, repudiandae odio
-        eius fugit quisquam sint modi dolores facere reprehenderit. Lorem ipsum
-        dolor sit amet consectetur, adipisicing elit. Rerum quas, porro
-        voluptate consectetur odit iure quam ut ex tenetur quidem deserunt ea
-        unde exercitationem accusamus nesciunt quo obcaecati ratione laboriosam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum quis
-        accusamus corrupti quas ratione inventore ipsum, odio, provident,
-        delectus ad rerum magni libero perferendis laudantium reiciendis
-        accusantium autem minus. Nisi! Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Sed atque eos animi corporis rerum dicta minus quia
-        labore ut accusantium nostrum dignissimos sunt delectus hic ratione qui,
-        laborum minima ex! Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Laboriosam, quis eligendi? Voluptates, architecto laudantium.
-        Ullam voluptates quia pariatur fugit unde, sed magnam, veritatis tempore
-        provident, officia perferendis doloribus repudiandae reiciendis.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit veniam
-        laudantium totam expedita, nemo mollitia doloribus neque. Magni
-        perferendis, adipisci debitis, dolor iste officia, eaque nisi vitae
-        consectetur autem eius. Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Culpa nesciunt, aliquid sint obcaecati fuga explicabo
-        aspernatur. Dignissimos, qui doloribus odit quam accusamus voluptate
-        natus ut illo cupiditate? Cupiditate, est ipsam. Lorem ipsum dolor, sit
-        amet consectetur adipisicing elit. Facilis rem expedita qui consequatur,
-        dolor suscipit omnis amet accusantium cupiditate fuga, repudiandae odio
-        eius fugit quisquam sint modi dolores facere reprehenderit. Lorem ipsum
-        dolor sit amet consectetur, adipisicing elit. Rerum quas, porro
-        voluptate consectetur odit iure quam ut ex tenetur quidem deserunt ea
-        unde exercitationem accusamus nesciunt quo obcaecati ratione laboriosam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum quis
-        accusamus corrupti quas ratione inventore ipsum, odio, provident,
-        delectus ad rerum magni libero perferendis laudantium reiciendis
-        accusantium autem minus. Nisi! Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Sed atque eos animi corporis rerum dicta minus quia
-        labore ut accusantium nostrum dignissimos sunt delectus hic ratione qui,
-        laborum minima ex! Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Laboriosam, quis eligendi? Voluptates, architecto laudantium.
-        Ullam voluptates quia pariatur fugit unde, sed magnam, veritatis tempore
-        provident, officia perferendis doloribus repudiandae reiciendis.
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit veniam
-        laudantium totam expedita, nemo mollitia doloribus neque. Magni
-        perferendis, adipisci debitis, dolor iste officia, eaque nisi vitae
-        consectetur autem eius. Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Culpa nesciunt, aliquid sint obcaecati fuga explicabo
-        aspernatur. Dignissimos, qui doloribus odit quam accusamus voluptate
-        natus ut illo cupiditate? Cupiditate, est ipsam. Lorem ipsum dolor, sit
-        amet consectetur adipisicing elit. Facilis rem expedita qui consequatur,
-        dolor suscipit omnis amet accusantium cupiditate fuga, repudiandae odio
-        eius fugit quisquam sint modi dolores facere reprehenderit. Lorem ipsum
-        dolor sit amet consectetur, adipisicing elit. Rerum quas, porro
-        voluptate consectetur odit iure quam ut ex tenetur quidem deserunt ea
-        unde exercitationem accusamus nesciunt quo obcaecati ratione laboriosam.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum quis
-        accusamus corrupti quas ratione inventore ipsum, odio, provident,
-        delectus ad rerum magni libero perferendis laudantium reiciendis
-        accusantium autem minus. Nisi! Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Sed atque eos animi corporis rerum dicta minus quia
-        labore ut accusantium nostrum dignissimos sunt delectus hic ratione qui,
-        laborum minima ex! Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Laboriosam, quis eligendi? Voluptates, architecto laudantium.
-        Ullam voluptates quia pariatur fugit unde, sed magnam, veritatis tempore
-        provident, officia perferendis doloribus repudiandae reiciendis.
-      </p>
-      <pre><code class="language-cs">
-public class HelloWorld {
-    public static void Main() {
-        Console.WriteLine("Hello, world!");
-    }
-}
-</code></pre>
+      <div style="view-transition-name: main_content">
+        <p>
+          C# was developed by Microsoft in the early 2000s as part of its .NET
+          Framework initiative. The creation of C# was driven by the need for a
+          modern, object-oriented language that would be simple to use, highly
+          productive, and suited for the growing world of web and enterprise
+          applications. Here's a detailed history:
+        </p>
+        <ol>
+          {% for version in site.data.c_sharp_history %}
+          <li>
+            {{version.Version}}
+            <p>{{version.Description}}</p>
+            <p>Key Features:</p>
+            <ol>
+              {% for feature in version.Features %}
+              <li>
+                {{feature.Title}}
+                <p>{{feature.Description}}</p>
+              </li>
+              {% endfor %}
+            </ol>
+          </li>
+          {% endfor %}
+        </ol>
+        <p>
+          C# continues to evolve with regular releases, adding new features to
+          improve developer experience, performance, and maintainability. As of
+          2025, C# 14 and beyond may focus on further enhancements for
+          asynchronous programming, improved diagnostics, and making the
+          language even more expressive. Future releases of C# and features can
+          be checked at:
+          <a
+            href="https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history"
+            target="_blank"
+            class="external_url"
+            >https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history</a
+          >
+        </p>
+      </div>
+      <div>{% include _nav_btn.html prev='intro' next='history' %}</div>
     </div>
   </div>
 </section>

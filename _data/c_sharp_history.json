@@ -1,0 +1,264 @@
+[
+  {
+    "Version": "The Birth of C# (1999 - 2000)",
+    "Description": "The story of C# begins with Anders Hejlsberg, a Danish software engineer who had previously worked on Turbo Pascal and Delphi. Hejlsberg joined Microsoft in 1996 and began working on the development of a new programming language designed to improve on the shortcomings of existing languages like C++ and Java. C# was introduced in 2000 alongside the .NET Framework initiative.",
+    "Features": [
+      {
+        "Title": "Context",
+        "Description": "In the late 1990s, Microsoft wanted to create a new platform for building enterprise applications, which would become the .NET Framework."
+      },
+      {
+        "Title": "Objective",
+        "Description": "C# was designed to provide a modern, object-oriented programming language that would work seamlessly with the .NET Framework and offer features like garbage collection, type safety, and simplified memory management."
+      },
+      {
+        "Title": "First Appearance",
+        "Description": "C# was first announced by Microsoft in June 2000 at the Professional Developers Conference (PDC) and introduced alongside .NET (then known as Next Generation Windows Services, or NGWS)."
+      }
+    ]
+  },
+  {
+    "Version": "C# 1.0 (2002)",
+    "Description": "C# 1.0 was officially released in 2002 as part of the .NET Framework 1.0, alongside the release of Visual Studio .NET. This marked the first stable release of the language, providing foundational features like object-oriented programming, garbage collection, and exception handling.",
+    "Features": [
+      {
+        "Title": "Object-Oriented",
+        "Description": "C# was fully object-oriented, supporting features like classes, inheritance, and interfaces."
+      },
+      {
+        "Title": "Type Safety",
+        "Description": "C# featured strong typing, garbage collection, and built-in support for exception handling."
+      },
+      {
+        "Title": "Common Language Runtime (CLR)",
+        "Description": "C# was designed to work with the CLR, allowing interoperability between C# and other .NET languages like Visual Basic .NET and F#."
+      }
+    ]
+  },
+  {
+    "Version": "C# 2.0 (2005)",
+    "Description": "Released with .NET Framework 2.0, C# 2.0 introduced significant improvements to enhance flexibility and performance, including support for generics and nullable types.",
+    "Features": [
+      {
+        "Title": "Generics",
+        "Description": "C# 2.0 introduced generics, allowing type-safe collections and algorithms, reducing the need for casting and improving performance."
+      },
+      {
+        "Title": "Nullable Types",
+        "Description": "C# 2.0 introduced support for nullable value types (e.g., int?), allowing them to represent null values."
+      },
+      {
+        "Title": "Iterators",
+        "Description": "The introduction of iterators and the 'yield' keyword allowed for simplified and more readable looping constructs."
+      }
+    ]
+  },
+  {
+    "Version": "C# 3.0 (2007)",
+    "Description": "C# 3.0, released with .NET Framework 3.5, focused on improving developer productivity and simplifying complex tasks with features like LINQ, anonymous methods, and extension methods.",
+    "Features": [
+      {
+        "Title": "LINQ (Language Integrated Query)",
+        "Description": "C# 3.0 introduced LINQ, enabling developers to write SQL-like queries directly within the language for querying arrays, collections, XML, and databases."
+      },
+      {
+        "Title": "Anonymous Methods",
+        "Description": "C# 3.0 allowed developers to define inline methods without the need for a separate method declaration or delegate."
+      },
+      {
+        "Title": "Implicitly Typed Local Variables",
+        "Description": "The 'var' keyword enabled implicit typing of local variables, letting the compiler infer the type based on the assigned value."
+      },
+      {
+        "Title": "Extension Methods",
+        "Description": "Extension methods allowed developers to add new methods to existing types without modifying the original class or interface."
+      }
+    ]
+  },
+  {
+    "Version": "C# 4.0 (2010)",
+    "Description": "C# 4.0, released with .NET Framework 4.0, focused on dynamic programming and improving flexibility with features like dynamic binding and optional parameters.",
+    "Features": [
+      {
+        "Title": "Dynamic Binding",
+        "Description": "C# 4.0 introduced the 'dynamic' keyword, allowing runtime binding for objects, enabling interaction with COM objects and dynamic languages."
+      },
+      {
+        "Title": "Named and Optional Parameters",
+        "Description": "Developers could now pass parameters by name and use default values for optional parameters, making method calls more flexible."
+      },
+      {
+        "Title": "Covariance and Contravariance",
+        "Description": "C# 4.0 enhanced type safety when working with generic collections, improving the flexibility of method overriding and delegation."
+      }
+    ]
+  },
+  {
+    "Version": "C# 5.0 (2012)",
+    "Description": "Released alongside .NET Framework 4.5, C# 5.0 focused on asynchronous programming and making it easier to write scalable applications with features like async/await.",
+    "Features": [
+      {
+        "Title": "Async and Await Keywords",
+        "Description": "C# 5.0 introduced the 'async' and 'await' keywords, simplifying the writing of asynchronous code by making it look more synchronous."
+      },
+      {
+        "Title": "Caller Info Attributes",
+        "Description": "C# 5.0 introduced caller info attributes, allowing developers to capture method call information such as file names, line numbers, and method names."
+      }
+    ]
+  },
+  {
+    "Version": "C# 6.0 (2015)",
+    "Description": "C# 6.0, released with .NET Framework 4.6, focused on improving code readability and developer productivity with features like interpolated strings and null-conditional operators.",
+    "Features": [
+      {
+        "Title": "Expression-bodied Members",
+        "Description": "The '=> (arrow)' syntax allowed for more concise code, particularly for property getters, methods, and other members."
+      },
+      {
+        "Title": "Interpolated Strings",
+        "Description": "C# 6.0 introduced string interpolation with '$', making it easier and more readable to format strings."
+      },
+      {
+        "Title": "Null-conditional Operator",
+        "Description": "The '?.' operator allowed developers to safely access object members without having to explicitly check for null, reducing boilerplate code."
+      },
+      {
+        "Title": "Static Using Directives",
+        "Description": "Static imports allowed for easier access to static members of a class without the need to qualify them."
+      }
+    ]
+  },
+  {
+    "Version": "C# 7.x (2017)",
+    "Description": "C# 7.x, released with .NET Core 2.x and .NET Framework 4.6.2, improved the language with new features like tuple types and pattern matching.",
+    "Features": [
+      {
+        "Title": "Tuple Types",
+        "Description": "C# 7.x added support for lightweight, unnamed tuples to group multiple values together without requiring complex types."
+      },
+      {
+        "Title": "Pattern Matching",
+        "Description": "Pattern matching was introduced for more flexible and powerful ways to match and destructure objects, improving the readability and maintainability of code."
+      },
+      {
+        "Title": "Local Functions",
+        "Description": "Local functions were introduced, enabling the definition of functions inside other methods, improving code organization and reuse."
+      }
+    ]
+  },
+  {
+    "Version": "C# 8.0 (2019)",
+    "Description": "C# 8.0, released with .NET Core 3.0, focused on null safety and improving async support with features like nullable reference types and async streams.",
+    "Features": [
+      {
+        "Title": "Nullable Reference Types",
+        "Description": "C# 8.0 introduced nullable reference types, helping developers prevent null reference exceptions by providing compiler warnings for potential violations of nullability rules."
+      },
+      {
+        "Title": "Async Streams",
+        "Description": "C# 8.0 added support for asynchronous streams, making it easier to work with data sources like files and databases asynchronously."
+      },
+      {
+        "Title": "Switch Expressions",
+        "Description": "Switch expressions were introduced, allowing for more concise and flexible syntax when handling multiple cases."
+      }
+    ]
+  },
+  {
+    "Version": "C# 9.0 (2020)",
+    "Description": "C# 9.0, released with .NET 5, introduced powerful new features like records for immutable data types and init-only properties for better object initialization.",
+    "Features": [
+      {
+        "Title": "Records",
+        "Description": "C# 9.0 introduced records, a new reference type designed for immutable data structures that emphasized value-based equality."
+      },
+      {
+        "Title": "Init-only Properties",
+        "Description": "C# 9.0 introduced 'init-only' properties, allowing properties to be set only during object initialization, making immutability more accessible."
+      },
+      {
+        "Title": "Target-typed new Expressions",
+        "Description": "C# 9.0 introduced target-typed 'new' expressions, allowing the type to be inferred from the context, simplifying object creation."
+      }
+    ]
+  },
+  {
+    "Version": "C# 10.0 (2021)",
+    "Description": "Released with .NET 6, C# 10.0 introduced features aimed at simplifying code structure and improving language expressiveness with global usings and file-scoped namespaces.",
+    "Features": [
+      {
+        "Title": "Global Using Directives",
+        "Description": "C# 10.0 allowed developers to define global using directives, reducing the need to repeat common namespaces throughout the project."
+      },
+      {
+        "Title": "File-scoped Namespaces",
+        "Description": "File-scoped namespaces simplified the declaration of namespaces, improving the readability of code by reducing indentation."
+      },
+      {
+        "Title": "Improved Pattern Matching",
+        "Description": "C# 10.0 introduced advanced patterns for even more powerful data matching capabilities."
+      }
+    ]
+  },
+  {
+    "Version": "C# 11.0 (2022)",
+    "Description": "C# 11.0, released with .NET 7, continued to improve language flexibility and performance with features like required members and list patterns.",
+    "Features": [
+      {
+        "Title": "Required Members",
+        "Description": "C# 11.0 introduced required members, making it mandatory to provide specific members when initializing objects, improving validation."
+      },
+      {
+        "Title": "List Patterns",
+        "Description": "List patterns were introduced, enabling more advanced matching for lists and arrays, making code more expressive."
+      }
+    ]
+  },
+  {
+    "Version": "C# 12.0 (2023)",
+    "Description": "C# 12.0 introduced several new productivity features aimed at improving the developer experience, with better pattern matching and performance enhancements.",
+    "Features": [
+      {
+        "Title": "Static Abstract Members in Interfaces",
+        "Description": "C# 12 introduced static abstract members in interfaces, enabling better interface-based polymorphism and code organization."
+      },
+      {
+        "Title": "Enhanced Lambda Expressions",
+        "Description": "C# 12 made lambda expressions more powerful by supporting better scoping rules and improving readability."
+      },
+      {
+        "Title": "Additional Pattern Matching Enhancements",
+        "Description": "Pattern matching was further enhanced to support more complex types and scenarios, reducing boilerplate code and increasing clarity."
+      }
+    ]
+  },
+  {
+    "Version": "C# 13.0 (2024)",
+    "Description": "C# 13.0 focused on continued improvements to language performance, type inference, and code maintainability, with a major emphasis on simplifying asynchronous programming and improving static code analysis tools.",
+    "Features": [
+      {
+        "Title": "Improved Async-Await Syntax",
+        "Description": "C# 13 streamlined async-await syntax, making asynchronous programming more intuitive, especially with integration with other asynchronous libraries."
+      },
+      {
+        "Title": "Advanced Code Analyzers",
+        "Description": "C# 13 introduced deeper static code analysis features that help catch potential issues during compile time, improving overall code quality."
+      }
+    ]
+  },
+  {
+    "Version": "C# 14.0 (2025)",
+    "Description": "C# 14.0 continues to optimize the language for real-world applications, focusing on further improving cross-platform compatibility, static typing, and language performance with more innovative features in data processing.",
+    "Features": [
+      {
+        "Title": "Deepening Type Inference",
+        "Description": "C# 14.0 introduced even more advanced type inference capabilities, allowing developers to write cleaner code while maintaining type safety."
+      },
+      {
+        "Title": "Enhanced Cross-Platform Support",
+        "Description": "C# 14.0 enhanced the cross-platform experience, including better integration with ARM and WebAssembly, allowing developers to deploy C# applications on a broader range of environments."
+      }
+    ]
+  }
+]

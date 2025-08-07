@@ -1,0 +1,16 @@
+{% if include.prev == null %}
+<p style="color: red; font-weight: bold">
+  ERROR: 'prev' parameter is required!
+</p>
+{% endif %} {% if include.next == null %}
+<p style="color: red; font-weight: bold">
+  ERROR: 'next' parameter is required!
+</p>
+{% endif %} {% assign prev_url = {{include.prev}} %} {% assign next_url =
+{{include.next}} %} {% if prev_url != "" %}
+<span class="float-left">{% include _prev_btn.html url=prev_url %} </span>
+{% endif %} {% if next_url != "" %}
+<span class="float-right float-end">
+  {% include _next_btn.html url=next_url %}</span
+>
+{% endif %}
