@@ -1,0 +1,226 @@
+---
+title: C# Fundamentals
+layout: post
+permalink: /course/csharp/first-c-sharp-project
+courseImage: /assets/img/courses/csharp.jpeg
+heading: "C# Fundamentals"
+active_section: setting_env
+---
+
+<section id="csharp-intro" class="section">
+  <div class="row">
+    <div class="col col-lg-3">
+      {% include_relative _curriculum.html active_section=page.active_section %}
+    </div>
+    <div class="col col-lg-9">
+      <h2 style="view-transition-name: course_heading">Creating Your First C# Project</h2>
+      <div style="view-transition-name: main_content">
+        <p>
+          In this section, we will create our first C# project using Visual
+          Studio or Visual Studio Code. This will help you understand the basic
+          structure of a C# application and how to run it.
+        </p>
+      
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-vs-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-vs"
+              type="button"
+              role="tab"
+              aria-controls="nav-vs"
+              aria-selected="true"
+            >
+              Visual Studio
+            </button>
+            <button
+              class="nav-link"
+              id="nav-vs-code-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-vs-code"
+              type="button"
+              role="tab"
+              aria-controls="nav-vs-code"
+              aria-selected="false"
+            >
+              Visual Studio Code
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-vs"
+            role="tabpanel"
+            aria-labelledby="nav-vs-tab"
+            tabindex="0"
+          >
+            <h4>Create a console project</h4>
+
+            <h6>Prerequisites</h6>
+            <p>
+              You should have Visual Studio 2022 or latest version of Visual Studio installed on your
+              machine. If you haven't done so, please refer to the
+              <a href="/course/csharp//intall-visual-studio" class="external_url">vs installation guide</a>.
+            </p>
+            <ul class="feature">
+              <li class="feature-item">
+                Open Visual Studio and select "Create a new project."
+                <p>
+                  <img
+                    src="https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/media/vs-2022/create-new-project.png?view=vs-2022"
+                    class="img-fluid"
+                  />
+                </p>
+              </li>
+              <li class="feature-item">
+                In the "Create a new project" dialog, search for "Console App". Select Console App
+                that can run on .NET on Windows, Linux and macOS.
+
+                <p>
+                  <div class="alert alert-warning" role="alert">
+                    <p>If you are not using Visual Studio 2022 or later, you can select "Console App (.NET Core)" or Console App (.NET 5/6/7) or Console App (.NET Framework) and  specify the .NET Core or .NET Framework version you want to use. 
+                    </p>
+                    
+                  </div>
+                  <img
+                    src="/assets/img/create_project.png"
+                    class="img-fluid"
+                  />
+                </p>
+                <p>
+                  <div class="alert alert-info" role="alert">                   
+                      <h6><i class="fa-solid fa-circle-info"></i> Note</h6>
+                      <p>If you don't see the Console App template, click on Install more tools and features link at the bottom of the dialog.</p>
+                      <img src="https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/media/vs-2022/not-finding-what-looking-for.png?view=vs-2022" class="img-fluid"/>
+                      <p>This will open Visual Studio Installer where you can select the ".NET desktop development" workload to install the necessary templates. 
+                    </p>
+                    <img src="https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/media/vs-2022/dot-net-development-workload.png?view=vs-2022" class="img-fluid"/>
+                  </div>
+                </p>
+              </li>
+              <li class="feature-item">
+                Click "Next," then provide a name for your project (e.g.,
+                "Calculator"), choose a location to save it, select "Create a new solution" on Solution dropdown and provide a solution name."
+                <p> <img src="https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/media/vs-2022/csharp-name-your-calculator-project.png?view=vs-2022#lightbox" class="img-fluid"/>
+                </p>               
+              </li>
+              <li class="feature-item">
+                Click "Next".
+              <li class="feature-item">
+               In the <b>Additional information</b> window, Select latest available .NET version from the dropdown. 
+               
+                <ul class="feature">
+                  <li class="feature-item">Don't check Enable container support</li>
+                  <li class="feature-item">Don't check do not use top-level statements</li>
+                  <li class="feature-item">Don't check Enable native AOT publish</li>
+                </ul>
+                <p> 
+                <img src="/assets/img/project_framework_window.png" class="img-fluid"/>
+               </p>              
+              </li>
+              <li class="feature-item">
+                Click "Create" to create the project.
+            </ul>
+
+              <h4>Run the app</h4>
+               <ul class="feature">
+              <li class="feature-item"> Click a play icon with a Calculator label on it in the left.
+                <p>
+                  <img
+                    src="/assets/img/vs_play_icon.png"
+                    class="img-fluid"
+                  />
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-vs-code"
+            role="tabpanel"
+            aria-labelledby="nav-vs-code-tab"
+            tabindex="0"
+          >
+            <h4>Create a console project</h4>
+           
+
+            <h6>Prerequisites</h6>
+            <ol>
+              <li>The latest .NET SDK</li>
+              <li><p>
+              You should have Visual Studio Code installed on your machine. If you haven't done so, please refer to the
+              <a href="/course/csharp/intall-visual-studio-code" class="external_url">VS Code installation guide</a>.
+            </p></li>
+            </ol>
+            
+            <ul class="feature">
+              <li class="feature-item">
+                Open Visual Studio Code.
+              </li>
+              <li class="feature-item">
+                Open the terminal in VS Code (View > Terminal or Ctrl + `).
+                <p>
+                  <img
+                    src="/assets/img/vs_code_terminal.png"
+                    class="img-fluid"
+                  />
+                </p>
+              </li>
+              <li class="feature-item">
+                Create a new directory for your project and navigate into it:
+                <pre><code class="language-bash">
+mkdir Calculator # Create a new directory named Calculator
+cd Calculator # Navigate into the Calculator directory
+dotnet new sln # Create a new solution file
+dotnet new console -n Calculator # Create a new console application named Calculator
+dotnet sln add Calculator/Calculator.csproj # Add the Calculator project to the solution
+                </code></pre>
+              </li>
+              <li class="feature-item">
+                Open the project in VS Code:
+                <pre><code class="language-bash">
+code . --reuse-window
+                </code></pre>
+              </li>
+              <li class="feature-item">
+                In the <b>Do you trust the authors of the files in this folder?</b> dialog, select <b>Yes, I trust the authors</b>
+              </li>
+            </ul>
+
+            <h4>Run the app</h4>
+            <p>To run app, run the command </p>
+            <pre class="theme-github-min"><code class="language-cs">
+dotnet run --project Calculator
+            </code></pre>
+            <h5>OR</h5>
+            <ul class="feature">
+              <li class="feature-item">
+                Click <b>Run</b> menu on the top
+              </li>
+              <li class="feature-item">
+                Click <b>Run Without Debugging</b> or press <b>Ctrl + F5</b>
+                <p>If asked to select a debugger, select C#, then select C#:Calculator</p>
+              <li class="feature-item">
+                You should see the output in the terminal.
+              </li>
+            </ul>
+            <p>
+              You should see the output in the terminal. If you see any errors, make sure you have followed the steps correctly.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>
+          Congratulations! You have successfully created your first C# project and run it. In the next section, we will explore the different components of a C# project .
+        </p>
+      </div>
+      <div class="section">{% include _nav_btn.html prev='intall-visual-studio-code' next='404' %}</div>
+    </div>
+  </div>
+</section>
+
+{% include cards/recommended_course.html course_first=2 course_second=0 %}
