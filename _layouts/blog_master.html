@@ -1,0 +1,163 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="your, tags" />
+    <meta name="description" content="{{page.description}}" />
+    <meta name="subject" content="{{ page.title }}" />
+    <meta name="copyright" content="Bhuban Shrestha" />
+    <meta name="language" content="EN" />
+    <meta name="robots" content="index,follow" />
+    <meta name="revised" content="{{site.time}}" />
+    <meta name="abstract" content="" />
+    <meta name="topic" content="{{page.title}}" />
+    <meta name="summary" content="{{page.summary}}" />
+    <meta name="Classification" content="{{page.category}}" />
+    <meta name="author" content="Bhuban Shrestha, bhubanshrestha12@gmail.com" />
+    <meta name="designer" content="Bhuban Shrestha" />
+    <meta name="reply-to" content="bhubanshrestha12@gmail.com" />
+    <meta name="owner" content="Bhuban Shrestha" />
+    <meta name="url" content="{{page.url}}" />
+    <meta name="identifier-URL" content="{{site.url}}" />
+    <meta name="directory" content="submission" />
+    <meta name="pagename" content="{{page.title}}" />
+    <meta name="category" content="" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="subtitle" content="This is my subtitle" />
+    <meta name="target" content="all" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="date" content="{{site.time}}" />
+    <meta name="search_date" content="{{site.time}}" />
+    <meta name="DC.title" content="{{page.title}}" />
+    <meta name="ResourceLoaderDynamicStyles" content="" />
+    <meta name="medium" content="blog" />
+
+    <meta name="og:title" content="{{page.title}}" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="{{page.url}}" />
+    <meta name="og:image" content="{{page.image}}" />
+    <meta name="og:site_name" content="{{site.title}}" />
+    <meta name="og:description" content="{{page.description}}" />
+
+    <title>{{page.title}}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css"
+      integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      id="hljs-theme"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      {% include header.html %}
+      <main>
+        {{ content }}
+
+        <!-- <section class="section" id="github_comment">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="bhubanstha/bhubanstha.github.io"
+            data-repo-id="R_kgDONVZqjQ"
+            data-category="[ENTER CATEGORY NAME HERE]"
+            data-category-id="[ENTER CATEGORY ID HERE]"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async
+          ></script>
+        </section> -->
+      </main>
+      <button
+        class="btn btn-warning btn-scroll-view-up"
+        onclick="topFunction()"
+        id="myBtn"
+      >
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"
+      integrity="sha512-Tc0i+vRogmX4NN7tuLbQfBxa8JkfUSAxSFVzmU31nVdHyiHElPPy2cWfFacmCJKw0VqovrzKhdd2TSTMdAxp2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> 
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js"
+      integrity="sha512-fo6X5UXaTRf/mHuTYJBR3Q/rpPa+LB2KUyDMROluMkZnfEEF4DhQyI5AHRoAe/zzu1Ty58MMmZXG4SuVEpXsng=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"
+      integrity="sha512-EBLzUL8XLl+va/zAsmXwS7Z2B1F9HUHkZwyS/VKwh3S7T/U0nF4BaU29EP/ZSf6zgiIxYAnKLu6bJ8dqpmX5uw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/csharp.min.js"
+      integrity="sha512-E508cDPDWSFwXbo0jUpAxAuDtuKyg3qzALy/oyrTBcP07/Xz79ajxXl4LzoNAZw+hr4NAnjPhAdwN0qtmJ9ukg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8268575324305314"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="/assets/js/post.js" async defer></script>
+    <script src="/assets/js/main.js" async defer></script>
+
+    <script>
+      $(document).ready(function () {
+        hljs.highlightAll();
+      });
+    </script>
+  </body>
+</html>
